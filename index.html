@@ -10,17 +10,17 @@
 
 <body>
 	<div>
-		<header>
-			<a href="/">Brians Ostebiks</a>
-			<button aria-controls="primaryNavigation" aria-describedby="message-menu-button">Menu</button>
+		<header role="banner">
+			<a href="/" role="link">Brians Ostebiks</a>
+			<button aria-controls="primaryNavigation" aria-describedby="message-menu-button" aria-expanded="false">Menu</button>
 
 			<nav id="primaryNavigation" role="navigation" aria-hidden="true">
 				<div>
 					<ul>
-						<li><a href="#!">Forside</a></li>
-						<li><a href="#!">Produkter</a></li>
-						<li><a href="#!">Historie</a></li>
-						<li><a href="#!">Kontakt</a></li>
+						<li role="listitem"><a href="#!" role="menuitem">Forside</a></li>
+						<li role="listitem"><a href="#!" role="menuitem">Produkter</a></li>
+						<li role="listitem"><a href="#!" role="menuitem">Historie</a></li>
+						<li role="listitem"><a href="#!" role="menuitem">Kontakt</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -28,63 +28,59 @@
 				<span id="message-menu-button">Klik her for at vise menuen</span>
 			</div>
 		</header>
-		<main>
-			<article>
+		<main role="main">
+			<article role="article">
 				<div>
-					<h1>Brians Ostebiks</h1>
-					<p>Velkommen til min lille forretning. Her kan du købe alverdens oste til fornuftige priser. Jeg
-						elsker
-						ost,
-						og derfor kan du være sikker på, at jeg kun har det allerbedste til dig.</p>
+					<h1 role="heading">Brians Ostebiks</h1>
+					<p role="paragrapgh">Velkommen til min lille forretning. Her kan du købe alverdens oste til fornuftige priser. Jeg elsker ost, og derfor kan du være sikker på, at jeg kun har det allerbedste til dig.</p>
 
-					<h2>Særlige tilbud</h2>
-					<div>
-						<h3>Ældgammel Rochefort</h3>
+					<h2 role="heading">Særlige tilbud</h2>
+					<div role="region" aria-labelledby="special-offers">
+						<h3 role="heading" id="special-offers">Ældgammel Rochefort</h3>
 						<img src="https://via.placeholder.com/200x200" alt="rochefort">
-						<p>Denne Rochefort kan kravle hen ad køkkenbordet helt af sig selv.</p>
-						<p>Kr. 97,50</p>
-						<a href="#!/produkter/4432">Læs mere</a>
+						<p role="paragrapgh">Denne Rochefort kan kravle hen ad køkkenbordet helt af sig selv.</p>
+						<p role="paragrapgh">Kr. 97,50</p>
+						<a href="#!/produkter/4432" role="link">Læs mere</a>
 					</div>
-					<div>
-						<h3>Mild Brie</h3>
+					<div role="region" aria-labelledby="mild-brie">
+						<h3 role="heading" id="mild-brie">Mild Brie</h3>
 						<img src="https://via.placeholder.com/200x200" alt="brie">
-						<p>Hvidskimmelosten alle elsker.</p>
-						<p>Kr. 43,95</p>
-						<a href="#!/produkter/43329">Læs mere</a>
+						<p role="paragrapgh">Hvidskimmelosten alle elsker.</p>
+						<p role="paragrapgh">Kr. 43,95</p>
+						<a href="#!/produkter/43329" role="link">Læs mere</a>
 					</div>
-					<div>
-						<h3>Potkäse</h3>
+					<div role="region" aria-labelledby="potkase">
+						<h3 role="heading" id="potkase">Potkäse</h3>
 						<img src="https://via.placeholder.com/200x200" alt="potkäse">
-						<p>Min egen hjemmerørte potkäse.</p>
-						<p>Kr. 52,50</p>
-						<a href="#!/produkter/2342">Læs mere</a>
+						<p role="paragrapgh">Min egen hjemmerørte potkäse.</p>
+						<p role="paragrapgh">Kr. 52,50</p>
+						<a href="#!/produkter/2342" role="link">Læs mere</a>
 					</div>
 				</div>
 			</article>
-			<section>
+			<section role="region" aria-labelledby="contact-info">
 				<div>
-					<div>
-						<p>Brians Ostebiks</p>
-						<p>Camembert Boulevard 42</p>
-						<p>4242 Nørre Osteved</p>
-						<p>Tlf.: 1243 5687</p>
-						<p>
-							<a href="mailto:cheesylove@briansostebiks.dk">cheesylove@briansostebiks.dk</a>
+					<address role="group">
+						<p role="paragrapgh">Brians Ostebiks</p>
+						<p role="paragrapgh">Camembert Boulevard 42</p>
+						<p role="paragrapgh">4242 Nørre Osteved</p>
+						<p role="paragrapgh">Tlf.: 1243 5687</p>
+						<p role="paragrapgh">
+							<a href="mailto:cheesylove@briansostebiks.dk" role="link">cheesylove@briansostebiks.dk</a>
 						</p>
-					</div>
+					</address>
 					<div>
-						<h1>Find os her</h1>
+						<h4 role="heading">Find os her</h4>
 						<ul>
-							<li><a href="#!">Facebook</a></li>
-							<li><a href="#!">Instragram</a></li>
-							<li><a href="#!">Twitter</a></li>
+							<li role="listitem"><a href="#!" role="link">Facebook</a></li>
+							<li role="listitem"><a href="#!" role="link">Instragram</a></li>
+							<li role="listitem"><a href="#!" role="link">Twitter</a></li>
 						</ul>
 					</div>
 				</div>
-
 			</section>
 		</main>
-		<footer>
+		<footer role="contentinfo">
 			<div>
 				Ophavsret &copy; 2018 Brians Ostebiks. Alle rettigheder forbeholdes.
 			</div>
